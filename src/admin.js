@@ -169,4 +169,13 @@
   }
 
   window.VinuAdmin = { bootAdmin: renderUploader };
+
+  // Auto boot when visiting /admin
+  if (window.location.pathname.startsWith('/admin')) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', renderUploader);
+    } else {
+      renderUploader();
+    }
+  }
 })();
