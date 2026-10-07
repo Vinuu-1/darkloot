@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <title>Vinu wallpaperZ</title>
+  <defs>
+    <linearGradient id="neon" x1="95" y1="115" x2="418" y2="402" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#70F3EF"/>
+      <stop offset=".55" stop-color="#8CF8E9"/>
+      <stop offset="1" stop-color="#B58BFF"/>
+    </linearGradient>
+    <filter id="glow" x="38" y="43" width="436" height="426" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#080A0D"/>
+  <path d="M256 60 430 161v190L256 452 82 351V161L256 60Z" stroke="#243238" stroke-width="14"/>
+  <path d="M142 161h228v45L213 347h158v48H142v-45l157-141H142v-48Z" fill="url(#neon)" filter="url(#glow)"/>
+  <path d="M142 161h228v45L213 347h158v48H142v-45l157-141H142v-48Z" fill="url(#neon)"/>
+  <path d="M102 377 256 466l154-89" stroke="#70F3EF" stroke-opacity=".45" stroke-width="8" stroke-linecap="round"/>
+</svg>
