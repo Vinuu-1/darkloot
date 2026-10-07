@@ -5,6 +5,7 @@
   "description": "Vinu wallpaperZ gaming wallpaper archive, account library, and admin control room",
   "packageManager": "pnpm@11.25.0",
   "scripts": {
+    "build": "node scripts/build.mjs",
     "start": "node server.js",
     "dev": "node --watch server.js",
     "check": "node --check server.js && node --check src/api.js && node --check src/metrics-chart.js && node --check src/admin.js && node --check src/google-auth.js && node --check src/app.js"
