@@ -126,17 +126,13 @@
 
         // 2. Insert into DB
         const payload = {
-          title: form.elements.title.value.trim(),
-          category: form.elements.category.value,
-          tags: form.elements.tags.value.split(',').map(s=>s.trim()).filter(Boolean),
-          description: form.elements.description.value.trim(),
-          image_url: publicUrl,
-          imageUrl: publicUrl,
-          width: parseInt(form.elements.width.value) || null,
-          height: parseInt(form.elements.height.value) || null,
-          status: 'published',
-          game: form.elements.category.value
-        };
+    title: form.elements.title.value.trim(),
+    category: form.elements.category.value,
+    tags: form.elements.tags.value.split(',').map(s=>s.trim()).filter(Boolean),
+    image_url: publicUrl,
+    width: parseInt(form.elements.width.value) || null,
+    height: parseInt(form.elements.height.value) || null
+  };
 
         const dbRes = await fetch(`${SUPABASE_URL}/rest/v1/wallpapers`, {
           method: 'POST',
