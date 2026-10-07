@@ -1,0 +1,6 @@
+packages:
+  - .
+allowBuilds:
+  busboy: false
+  google-auth-library: false
+  mysql2: false
